@@ -1,0 +1,45 @@
+/*
+*		ICS
+*		Nima Saberi
+*		09119303114
+* 		donbaler@gmail.com
+*		uxDev.ir
+*/
+
+.icsInput {
+	position: relative;
+}
+.icsInput input {
+	margin: 10px 0 2px 0;
+	width: 100%;
+	text-align: left;
+	direction: ltr;
+}
+.icsInput.dirRight input {
+	text-align: right;
+	direction: rtl;
+}
+.icsInput span {
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin: 13px 7px 0 0;
+	cursor: pointer;
+	displaY: none;
+	opacity: 0.5;
+}
+.icsInput.dirRight span {
+	right: inherit;
+	left: 0;
+	margin: 13px 0 0 7px;
+}
+.icsInput:hover span {
+	opacity: 1;
+}
+
+#category-all {
+	min-height: 300px;
+	height: 300px;
+	max-height: 500px;
+	resize: vertical;
+}
